@@ -21,7 +21,7 @@ const HotelPage = () => {
     date.setDate(date.getDate() + (+count));
     const checkOut = getFormatDate(date);
     dispatch(hotelsFetching({location, checkIn, checkOut, count}));
-  }, [])
+  }, [dispatch])
 
 
   return (

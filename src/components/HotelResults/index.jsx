@@ -40,10 +40,10 @@ const HotelResults = () => {
         </div>
       </div>
       <div className='hotel-results__carousel'>
-        <img className='hotel-results__image' src={require('../../images/image1.png')} alt="image"/>
-        <img className='hotel-results__image' src={require('../../images/image2.png')} alt="image"/>
-        <img className='hotel-results__image' src={require('../../images/image3.png')} alt="image"/>
-        <img className='hotel-results__image' src={require('../../images/image1.png')} alt="image"/>
+        <img className='hotel-results__image' src={require('../../images/hotel1.png')} alt="hotel1"/>
+        <img className='hotel-results__image' src={require('../../images/hotel2.png')} alt="hotel2"/>
+        <img className='hotel-results__image' src={require('../../images/hotel3.png')} alt="hotel3"/>
+        <img className='hotel-results__image' src={require('../../images/hotel1.png')} alt="hotel4"/>
       </div>
       <div className="hotel-results__favorites-text">
         Добавлено в избранное:
