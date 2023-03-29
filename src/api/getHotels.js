@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const getHotels = async (location, checkIn, checkOut) => {
-  return await axios.get('http://engine.hotellook.com/api/v2/cache.json', {
+  return await axios.get('https://engine.hotellook.com/api/v2/cache.json', {
     params: {
       location,
       checkIn,
