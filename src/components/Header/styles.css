@@ -1,0 +1,17 @@
+.header {
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logout {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__logout-text {
+    font-weight: 400;
+    margin-right: 15px;
+}

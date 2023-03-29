@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Form} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
+import './styles.css'
 
 const AuthPage = () => {
   const [form, setForm] = useState({
@@ -11,7 +12,6 @@ const AuthPage = () => {
     email: null,
     password: null,
   })
-  console.log(form)
   const navigate = useNavigate();
 
   const findFormErrors = () => {
@@ -20,7 +20,6 @@ const AuthPage = () => {
     const validateEmailRegex = /^\S+@\S+\.\S+$/;
     const checkCyrillicRegex = /[\u0401\u0451\u0410-\u044f]/;
     if (!validateEmailRegex.test(email)) {
-      console.log(123123)
       newErrors.email = 'Некорректный email'
     }
     if (password.length < 8 || checkCyrillicRegex.test(password)) {
@@ -45,22 +44,23 @@ const AuthPage = () => {
     e.preventDefault()
     const newErrors = findFormErrors()
     if (Object.keys(newErrors).length > 0) {
-      // We got errors!
       setErrors(newErrors)
     } else {
-      navigate('/')
+      localStorage.setItem('isAuth', 'true');
+      navigate('/');
     }
   }
 
   return (
     <div className="auth">
       <div className="auth__blur">
-        <div className='auth__form d-flex flex-column align-items-center'>
+        <div className='auth__form block__window'>
           <h2 className='auth__title'>Simple Hotel Check</h2>
-          <Form noValidate
-                onSubmit={handleSubmit}
-                style={{width: '345px'}}>
-            <Form.Group className='auth__group'>
+          <Form className='w-100'
+            noValidate
+            onSubmit={handleSubmit}
+          >
+            <Form.Group className='auth__group mb-4'>
               <Form.Label>Логин</Form.Label>
               <Form.Control
                 name='email'

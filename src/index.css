@@ -1,21 +1,36 @@
+@font-face {
+    font-family: 'Roboto300';
+    src: local('Roboto300'), url(./fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto400';
+    src: local('Roboto400'), url(./fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto500';
+    src: local('Roboto500'), url(./fonts/Roboto-Medium.ttf) format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-    font-weight: 300;
-    font-size: 14px;
+    font-family: Roboto300, sans-serif;
+    font-size: 16px;
+    color: #424242;
 }
 
 h1 {
     margin: 0;
-    font-weight: 500;
+    font-family: Roboto500, sans-serif;
     font-size: 32px;
 }
 
 h2 {
     margin: 0;
-    font-weight: 500;
+    font-family: Roboto500, sans-serif;
     font-size: 24px;
 }
 
@@ -23,9 +38,18 @@ h2 {
     background: linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-bottom: 32px;
+    border: none;
+    margin-top: 32px;
     height: 50px;
     width: 100%;
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
+}
+
+.btn:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
 }
 
 input {
@@ -35,43 +59,8 @@ input {
     height: 50px;
 }
 
-.auth {
-    background: url(/src/images/auth-bg.png) center bottom / cover no-repeat;
-    height: 100vh;
-    width: 100%;
-}
-
-.auth__blur {
-    background:  rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-    height: 100vh;
-    width: 100%;
-}
-
-.auth__form {
-    position: absolute;
-    width: 409px;
-    left: calc(50% - 409px/2 - 0.5px);
-    top: calc(50% - 382px/2);
-    background: #FFFFFF;
+.block__window {
+    background: white;
     box-shadow: 0 4px 33px rgba(0, 0, 0, 0.04);
     border-radius: 16px;
-}
-
-.auth__form  label {
-    font-size: 16px;
-}
-
-.auth__title {
-    margin: 32px 0;
-}
-
-.auth__group {
-    overflow: visible;
-    height: 81px;
-    margin-bottom: 24px;
-}
-
-.auth__btn {
-    margin-top: 8px;
 }

@@ -1,0 +1,19 @@
+.hotel {
+    background: #E5E5E5;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.hotel__main {
+    width: 1048px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hotel__col1 {
+    width: 360px;
+    margin-right: 24px;
+    flex: none;
+}

@@ -1,0 +1,44 @@
+.auth {
+    background: url(/src/images/auth-bg.png) center bottom / cover no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.auth__blur {
+    background:  rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 100%;
+}
+
+.auth__form {
+    position: absolute;
+    width: 409px;
+    left: calc(50% - 409px/2);
+    top: calc(50% - 382px/2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+.auth__form  label {
+    font-size: 16px;
+}
+
+.auth__title {
+    margin-bottom: 32px;
+}
+
+.auth__group {
+    overflow: visible;
+    height: 81px;
+}
+
+.auth__btn {
+    margin-top: 8px;
+}
+
+.invalid-feedback {
+    font-size: 9px;
+}

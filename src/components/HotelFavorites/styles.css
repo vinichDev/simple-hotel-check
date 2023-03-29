@@ -1,0 +1,47 @@
+.hotel-favorites {
+    margin-top: 24px;
+    width: 100%;
+    padding: 32px;
+}
+
+.hotel-favorites__filter {
+    margin-top: 32px;
+    display: flex;
+}
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    background: none;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    color: #99A0A3;
+    margin-right: 8px;
+}
+
+.filter-button__text {
+    padding-right: 4px;
+    font-family: Roboto400, sans-serif;
+    font-size: 14px
+}
+
+.filter-active {
+    border-color: #41522E;
+    color: #41522E;
+}
+
+.hotel-favorites__list {
+    margin-top: 32px;
+    height: 290px;
+    overflow-y: scroll;
+}
+
+.hotel-favorites__list::-webkit-scrollbar {
+    width: 0;
+}
+
+.hotel-favorites__row {
+    border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+    margin-bottom: 16px;
+}

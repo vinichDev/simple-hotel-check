@@ -1,0 +1,8 @@
+.hotel-form {
+    width: 100%;
+    padding: 32px;
+}
+
+.hotel-form label {
+    font-family: Roboto500, sans-serif;
+}
